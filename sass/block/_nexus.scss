@@ -1,0 +1,36 @@
+.nexus{
+    background: $bg-dark;
+    padding-bottom: 150px;
+    &__subtitle{
+        font-size: 48px;
+        font-weight: 800;
+        color: &bg-light;
+        margin-bottom: 32px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    &__card{
+        width: 360px;
+        background: $bg-py;
+        padding: 43px 26px 35px;
+        text-align: center;
+        transition: .25s;
+        &:hover{
+            transform: scale(1.03);
+            background: $bg-gold;
+            p{
+                color: $bg-dark;
+            }
+        }
+        p{
+            font-size: 24px;
+            font-weight: 400;
+            color: #fff;
+            margin-top: 27px;
+            font-family: Neue Machina;
+        }
+    }
+}
